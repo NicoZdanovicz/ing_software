@@ -1,0 +1,66 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulo{
+    font-size: 80px;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    font-weight: 800;
+}
+.img{
+    width: 450px; 
+    height: 380px; 
+    padding-left:8rem;
+}
+.seccionLogin{
+    display: flex;
+}
+.sesion{
+    font-size: 40px;
+    font-weight: 900;
+    padding-top: 10rem;
+    
+}
+.login{
+    background-color: #38A1FF;
+    width: 50%;
+    padding-left: 1rem;
+}
+.logo{
+    background-image: url(./src/fondo.png);
+    background-repeat: no-repeat;
+    padding-bottom: 4rem;
+    padding-right: 15rem;
+    background-size: 80rem 45rem;
+    
+}
+
+.formularioInicio{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    margin-top: 70px;
+}
+label{
+    margin-top: 5px;
+}
+#usuario, #contraseña{
+    margin-top: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #d7d7e9;
+}
+.botonIniciar{
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #060606;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
