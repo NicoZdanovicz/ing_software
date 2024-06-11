@@ -17,25 +17,24 @@ body, html{
 }
 .seccionLogin{
     display: flex;
+    
 }
 .sesion{
     font-size: 40px;
     font-weight: 900;
     padding-top: 10rem;
-    
 }
 .login{
     background-color: #38A1FF;
-    width: 50%;
-    padding-left: 1rem;
+    display: block;
+    flex: 1;
 }
 .logo{
     background-image: url(./src/fondo.png);
     background-repeat: no-repeat;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
     padding-right: 15rem;
-    background-size: 80rem 45rem;
-    
+    background-size: 80rem 48rem;
 }
 
 .formularioInicio{
@@ -64,3 +63,161 @@ label{
     padding: 5px;
     cursor: pointer;
 }
+
+@media (max-width: 1270px){
+    .seccionLogin{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .titulo{
+        font-size: 80px;
+        padding-left: 10rem;
+        text-align: center;
+        font-weight: 600;
+    }
+  
+    .logo{
+        background-image: none;
+        padding-bottom: 6rem;
+        text-align: center;
+        
+    }
+    .sesion{
+        display: none;
+
+    }
+    .login{
+        background-image: url(./src/fondo1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+/*---------------------------------------------------------------*/
+footer {
+    position: relative;
+    display: flex;
+    padding: 0 8rem 0 8rem;
+    justify-content: space-between;
+    background-color: #1f1f31;
+    color: #adb5bd;
+    text-align: center;
+    font-size: 14px;
+    
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 20px;
+}
+
+footer a {
+    color: rgb(189, 161, 249);
+}
+
+
+.titulo-contacto {
+    font-size: 18px;
+    text-align: left;
+}
+
+.footer_texto1 {
+    border: 1px #adb5bd solid;
+    padding: 5px;
+}
+
+.formulario-de-contacto {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    color: #adb5bd;
+}
+
+.formulario-de-contacto ::placeholder {
+    font-family: "Poppins", sans-serif;
+    color: black;
+}
+
+.formulario-de-contacto label {
+    margin-top: 5px;
+    font-size: 13px;
+    text-align: justify;
+
+}
+
+.formulario-de-contacto #nombre-footer {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border: 2px solid #303644;
+    background-color: #d7d7e9;
+    width: 250px;
+
+}
+
+.formulario-de-contacto #correo-footer {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border: 2px solid #303644;
+    background-color: #d7d7e9;
+    width: 250px;
+
+}
+
+.formulario-de-contacto textarea {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 300px;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid #303644;
+    background-color: #d7d7e9;
+}
+
+
+.formulario-de-contacto #submit-footer {
+    width: 120px;
+    height: 35px;
+    color: #ffffff;
+    background-color: #17a1a3;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-family: "Poppins", sans-serif;
+}
+
+.formulario-de-contacto #submit-footer:hover {
+    background-color: #067c4f;
+}
+
+
+.formulario-de-contacto #nombre-footer {
+    padding: 10px 20px 5px 35px;
+    background-position: left center;
+}
+
+.formulario-de-contacto #correo-footer {
+    padding: 10px 20px 5px 35px;
+    background-position: left center;
+}
+
+
+#mensaje-nombre-footer,
+#mensaje-correo-footer,
+#mensaje-comentario-footer {
+    font-size: 12px;
+    color: #940606;
+    background-color: #7e7b997d;
+    font-weight: 550;
+}
+/*-------------------------------------------------------------------*/
