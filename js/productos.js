@@ -49,3 +49,48 @@ function validacion() {
     // Devolver false si hay algún error para evitar el envío del formulario
     return !hayError;
 }
+
+// Fetch para cargar los productos desde el archivo JSON
+fetch('../DB/productos.json')
+    .then((respuesta) => respuesta.json())
+    .then((data) => {
+        // Llama a la función para poblar el select con los productos cargados
+        contenedorProductos(data);
+    })
+    .catch((error) => {
+        console.error('Error al cargar los productos:', error);
+    });
+
+// Función para poblar el select con los productos cargados desde el archivo JSON
+function contenedorProductos(productos) {
+    const selectProducto = document.getElementById('producto');
+
+    // Itera sobre cada producto y crea una opción para cada uno
+    productos.forEach((producto) => {
+        const option = document.createElement('option');
+        option.text = producto.producto;
+        selectProducto.add(option);
+    });
+}
+
+fetch('../DB/local.json')
+    .then((respuesta) => respuesta.json())
+    .then((data) => {
+        // Llama a la función para poblar el select con los productos cargados
+        contenedorLocal(data);
+    })
+    .catch((error) => {
+        console.error('Error al cargar los locales:', error);
+    });
+
+// Función para poblar el select con los productos cargados desde el archivo JSON
+function contenedorLocal(locales) {
+    const selectLocal = document.getElementById('local');
+
+    // Itera sobre cada producto y crea una opción para cada uno
+    locales.forEach((local) => {
+        const option = document.createElement('option');
+        option.text = local.local;
+        selectLocal.add(option);
+    });
+}

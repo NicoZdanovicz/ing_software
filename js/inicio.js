@@ -13,13 +13,13 @@ function validacion_usuario() {
     document.getElementById("mensaje-contraseña").innerHTML = "";
 
     // Validar el nombre
-    if (usuario == null || usuario.length == 0 || usuario!=nombre_usuario) {
+    if (usuario!=nombre_usuario) {
         document.getElementById("mensaje-usuario").innerHTML = "⚠️ Usuario incorrecto";
         hayError = true;
     }
 
      //Validar la cantidad de productos
-     if (password == null || password.length == 0 || password!=password_usuario) {
+     if (password!=password_usuario) {
         document.getElementById("mensaje-contraseña").innerHTML = "⚠️ Contraseña incorrecta";
         hayError = true;
     }
