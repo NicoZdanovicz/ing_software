@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/04f66e3763.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/registro.css">
+    <title>Registro</title>
+</head>
+<body>
+    <main>
+        <section class="formularioRegistro">
+            <h2 class="titulo-registro">REGISTRO</h2>
+            <hr>
+            
+            <form action="/index.html" method="get" enctype="application/x-www-form-urlencoded" class="formulario-de-registro" onsubmit="return validacion();">
+                
+                <div class="iconoRegistroContenedor">
+                    <img src="/src/iconoregistro.png" alt="" class="iconoRegistro">
+                </div>
+               
+                <div class="input-container">
+                    <i class="fa-solid fa-envelope"></i><input type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+                </div>
+                <label id="mensaje-correo"></label>
+
+                <div class="input-container">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre de usuario">   
+                </div>
+                <label id="mensaje-nombre"></label>
+
+                <div class="input-container">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="password" id="password" placeholder="Ingrese su contraseña">  
+                </div>
+                <label id="mensaje-contraseña"></label>
+
+                <div class="input-container">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="password" id="confirmPassword" placeholder="Ingrese su contraseña nuevamente"> 
+                </div>
+                <label id="mensaje-confirmContraseña"></label>
+
+               <div class="input-container">
+                <i class="fa-solid fa-bars-progress"></i>
+                <select id="rol" name="rol">
+                    <option value="">Seleccione un Rol</option>
+                    <option value="1">Censista</option>
+                    <option value="2">Comercio</option>
+                </select>
+               </div>
+               <label id="mensaje-seleccion"></label>
+
+                <div style="font-size: 13px; font-weight: bold;">
+                <input type="checkbox" name="terminos" id="terminos">
+                <label for="terminos">Acepto los terminos y condiciones de uso</label>
+                </div>
+                <label id="mensaje-terminos"></label>
+
+                <input id="submitRegistro" name="submit" type="submit" value="Registrarse">
+                
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+        <p class="footer_texto1" style="margin-top: 40px;">Si tenes dudas te puedes <a href="">Contactar con el soporte del sitio</a> y <br> resolveremos tus dudas de forma inmediata </p>
+        <div style="margin-top: 40px;">
+            <p class="footer_texto3">© Fio UNaM 2024</p>
+            <p class="footer_texto4">Diseñado & Desarrollado por <a href="">Aspe</a> | <a href="">Wlodeck</a> | <a href="">Zdanovicz</a></p>
+        </div>
+        
+    </footer>
+    <script src="/js/registro.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/04f66e3763.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/productos.css">
+    <title>Productos</title>
+</head>
+<body>
+    <main>
+        <section class="formularioRegistro">
+            <h2 class="titulo-registro">NUEVO CENSO</h2>
+            <hr>
+            
+            <form action="/index.html" method="get" enctype="application/x-www-form-urlencoded" class="formulario-de-registro" onsubmit="return validacion();">
+                
+                <div class="input-container">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <select id="producto" name="producto">
+                        <option value="">Seleccione un Producto:</option>
+                        <option value="1">Fideo</option>
+                        <option value="2">Arroz</option>
+                    </select>
+                   </div>
+                   <label id="mensaje-seleccion-prod"></label>
+
+                <div class="input-container">
+                    <i class="fa-solid fa-tags"></i>
+                    <input type="text" id="marca" name="marca" placeholder="Ingrese la marca del producto">
+                    
+                </div>
+                <label id="mensaje-marca"></label>
+
+                <div class="input-container">
+                    <i class="fa-solid fa-shop"></i>
+                    <select id="local" name="local">
+                        <option value="">Seleccione un Local:</option>
+                        <option value="1">Dinco</option>
+                        <option value="2">Condor</option>
+                    </select>
+                    
+                </div>
+                <label id="mensaje-seleccion-local"></label>
+
+                <div class="input-container">
+                    <i class="fa-solid fa-weight-scale"></i>
+                    <input type="number" id="peso" name="peso" placeholder="Ingrese el peso del producto (g)">
+                    
+                </div>
+                <label id="mensaje-peso"></label>
+
+                <div class="input-container">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <input type="number" id="precio" name="precio" placeholder="Ingrese el precio del producto">
+                    
+                </div>
+                <label id="mensaje-precio"></label>
+                
+                <textarea name="descripcion" id="descripcion" cols="30" rows="5" maxlength="1000" placeholder="Descripcion(opcional)"></textarea>
+
+
+                <input id="submitRegistro" name="submit" type="submit" value="Enviar">
+                
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+        <p class="footer_texto1" style="margin-top: 40px;">Si tenes dudas te puedes <a href="">Contactar con el soporte del sitio</a> y <br> resolveremos tus dudas de forma inmediata </p>
+        <div style="margin-top: 40px;">
+            <p class="footer_texto3">© Fio UNaM 2024</p>
+            <p class="footer_texto4">Diseñado & Desarrollado por <a href="">Aspe</a> | <a href="">Wlodeck</a> | <a href="">Zdanovicz</a></p>
+        </div>
+        
+    </footer>
+    <script src="/js/productos.js"></script>
+</body>
+</html>
